@@ -1,209 +1,23 @@
-.page {
-  min-width: 1100px;
-  /* we are not making mobile versions of websites yet, */
-  /* so here we've set a minimum page width */
-  max-width: 1600px;
-  /* here we've set a maximum page width */
-  margin: 0 auto;
-  /* this ensures that all content is centered on screens wider than 1600px */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-
-.header {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  background-color: #f2f2f2;
-  display: flex;
-  position: relative;
-  align-items: center;
-}
-
-.title{
-  line-height: 96px;
-  font-size: 102px;
-  font-weight: 600;
-  width: 730px;
-  position: absolute;
-  left: 64px;
-  z-index: 10;
-}
-
-.subtitle{
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
-  width: 388px;
-  position: absolute;
-  bottom: 30px;
-  left: 64px;
-  z-index: 9;
-}
-
-.link {
-  text-decoration: none;
-  z-index: 9;
-}
-
-.main-illustration{
-  width: 765px;
-  height: 608px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: 8;
-}
-
-.square-pic{
-  position: absolute;
-  right: 0;
-  top: 64px;
-  width: 568px; 
-  height: 568px;
-  background-color: rgb(173, 216, 255);
-  z-index: 7;
-}
-
-.two-columns{
-  position: relative;
-}
-
-.description{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  justify-content: center;
-  background-color: #fff;
-}
-
-
-.two-columns {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  width: 80%;
-  min-width: 784px;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-}
-
-.brief {
-  flex-shrink: 0;
-  width: 175px; 
-  margin-right: 30px;
-  color: blue;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.main-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.paragraph { 
-  margin-bottom: 30px; 
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-}
-
-.span-accent{
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.kaufman{
-  padding-top: 90px;
-  width: 100%;
-  background-color: #1f1f1f; /* Set the background color */
-  display: flex; /* Use flexbox */
-  flex-direction: column; /* Arrange items vertically */
-  justify-content: center; /* Center items vertically */
-  align-items: center; /* Center items horizontally */
-  position: relative;
-}
-
-.table{
-  z-index: 5;
-  margin-top: 80px; 
-  display: flex;
-  flex-wrap: wrap;
-  gap: 80px; 
-  justify-content: center;
-}
-
-.section-title{
-  z-index: 5;
-  margin-top: 0;
-  margin-bottom: 0;
-  text-align: center;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 600;
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  width: 60%;
-  color: white;
-}
-
-.section-subtitle{
-  z-index: 5;
-  margin-top: 20px; 
-  margin-bottom: 0;
-  text-align: center;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  color: white;
-  width: 60%;
-}
-
-.cell{
-  width: 200px;
-  padding-bottom: 30px; 
-}
-
-.heading{
-  color: white;
-  line-height: 1.15;
-  font-size: 24px;
-  font-weight: 600;
-}
-
-.text{
-  color: white;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-.triangle{
-  position: absolute;
-  z-index: 1;
-  right: 0;
-  transform: scaleX(-1);
-}
-
-.footer{    
-  background-color: #1f1f1f;
-  padding-bottom: 40px;    
-  padding-top: 60px;
-  display: flex;
-  justify-content: center;
-}
-
-.author{
-  padding-bottom: 18px;    
-  padding-top: 18px;
-  width: 90%;
-  line-height: 25px;
-  font-size: 18px;
-  font-weight: normal;
-  color: white;
-  display: inline-block;
-}
+@import 'styles/blocks/description.css';
+@import 'styles/blocks/footer.css';
+@import 'styles/blocks/header.css';
+@import 'styles/blocks/kaufman.css';
+@import 'styles/elements/content/_description/__brief.css';
+@import 'styles/elements/content/_description/__main-text.css';
+@import 'styles/elements/content/_description/__paragraph.css';
+@import 'styles/elements/content/_description/__span-accent.css';
+@import 'styles/elements/content/_description/__two-columns.css';
+@import 'styles/elements/content/_kaufman/__cell.css';
+@import 'styles/elements/content/_kaufman/__heading.css';
+@import 'styles/elements/content/_kaufman/__section-subtitle.css';
+@import 'styles/elements/content/_kaufman/__section-title.css';
+@import 'styles/elements/content/_kaufman/__table.css';
+@import 'styles/elements/content/_kaufman/__text.css';
+@import 'styles/elements/content/_kaufman/__triangle.css';
+@import 'styles/elements/footer/_author.css';
+@import 'styles/elements/header/_link.css';
+@import 'styles/elements/header/_main-illustration.css';
+@import 'styles/elements/header/_square-pic.css';
+@import 'styles/elements/header/_subtitle.css';
+@import 'styles/elements/header/_title.css';
+@import 'styles/pages/page.css';
