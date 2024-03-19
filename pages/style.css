@@ -1,3 +1,4 @@
+@import 'page.css';
 @import '../blocks/description/description.css';
 @import '../blocks/description/description__brief.css';
 @import '../blocks/description/description__main-text.css';
@@ -20,4 +21,3 @@
 @import '../blocks/kaufman/kaufman__table.css';
 @import '../blocks/kaufman/kaufman__text.css';
 @import '../blocks/kaufman/kaufman__triangle.css';
-@import 'page.css';
